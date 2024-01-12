@@ -1,0 +1,125 @@
+@import "../../css/variables";
+
+
+.annih_carousel {
+    width: 100%!important;
+    max-width: 100%!important;
+    position: relative;
+    height: 700px;
+    .annih_carousel_item {
+        width: 100%;
+        display: flex;
+        @media (max-width: 1500px) {
+            display: block;
+        }
+        position: absolute;
+        opacity: 0;
+        z-index: 1;
+        @include transition(all 1.5s);
+        .annih_carousel_left {
+            width: 50%;
+            height: 700px;
+            position: relative;
+            background: $white;
+            @media (max-width: 1500px) {
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 2;
+                width: 100%;
+                background: rgba(255, 255, 255, 0.8);
+            }
+            .annih_carousel_content {
+                position: absolute;
+                left: 20px;
+                right: 20px;
+                top: 30%;
+                h2 {
+                    font-size: 6rem;
+                    font-weight: 400;
+                    margin: 0;
+                    padding: 0px;
+                    @media (max-width: 1500px) {
+                        font-size: 5rem;
+                    }
+                }
+                .annih_carousel_link {
+                    @include borderRadius(10px);
+                    border: $black 2px solid;
+                    display: inline-block;
+                    padding: 10px 30px;
+                    font-size: 1.2rem;
+                    color: $mainfont;
+                    text-decoration: none;
+                }
+                h2, p, .annih_carousel_link {
+                    @include transition(all 1.5s ease-in-out);
+                    @include transform(translateY(100px));
+                    opacity: 0;
+                }
+            }
+        }
+        .annih_carousel_right {
+            position: relative;
+            width: 50%;
+            height: 700px;
+            @include bgSize(cover!important);
+            @media (max-width: 1500px) {
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 1;
+                width: 100%;
+            }
+        }
+        &.active {
+            opacity: 1;
+            z-index: 2;
+            opacity: 1;
+            .annih_carousel_content {
+                h2, p, .annih_carousel_link {
+                    @include transform(translateY(0px));
+                    opacity: 1;
+                }
+                h2 {
+                    @include delay(0.25s);
+                }
+                p {
+                    @include delay(0.45s);
+                }
+                .annih_carousel_link {
+                    @include delay(0.65s);
+                }
+            }
+        }
+    }
+    .annih_carousel_tabs_container {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 250px;
+        display: flex;
+        align-items: center;
+        background: $rust;
+        padding: 20px;
+        z-index: 5;
+        .annih_carousel_tabs {
+            flex-grow: 1;
+            border-bottom: rgba(255,255,255, 0.5) 2px solid;
+            @include transition(all 1.5s);
+            &.tabNums {
+                border: none;
+                text-align: center;
+            }
+            span {
+                font-size: 0.7rem;
+                color: $white;
+                margin: 0;
+                padding: 0;
+            }
+            &.active {
+                border-color: $white;
+            }
+        }
+    }
+}

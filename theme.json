@@ -1,0 +1,106 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"settings": {
+		"layout": {
+            "contentSize": "1800px",
+            "wideSize": "1800px"
+        },
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFamily": "Ostrich Sans Rounded",
+					"name": "Ostrich Sans Rounded",
+					"slug": "ostrich-sans-rounded",
+					"fontFace": [
+						{
+							"fontFamily": "Ostrich Sans Rounded",
+							"fontWeight": "500",
+							"fontStyle": "normal",
+							"src": [
+								"file:./assets/fonts/ostrich-sans-rounded_normal_500.woff"
+							]
+						}
+					]
+				},
+				{
+					"fontFamily": "Ostrich Sans Inline",
+					"name": "Ostrich Sans Inline",
+					"slug": "ostrich-sans-inline",
+					"fontFace": [
+						{
+							"fontFamily": "Ostrich Sans Inline",
+							"fontWeight": "400",
+							"fontStyle": "normal",
+							"src": [
+								"file:./assets/fonts/ostrich-sans-inline_normal_400.woff"
+							]
+						},
+						{
+							"fontFamily": "Ostrich Sans Inline",
+							"fontWeight": "400",
+							"fontStyle": "italic",
+							"src": [
+								"file:./assets/fonts/ostrich-sans-inline_italic_400.woff"
+							]
+						}
+					]
+				},
+				{
+					"fontFamily": "Ostrich Sans Dashed",
+					"name": "Ostrich Sans Dashed",
+					"slug": "ostrich-sans-dashed",
+					"fontFace": [
+						{
+							"fontFamily": "Ostrich Sans Dashed",
+							"fontWeight": "500",
+							"fontStyle": "normal",
+							"src": [
+								"file:./assets/fonts/ostrich-sans-dashed_normal_500.woff"
+							]
+						}
+					]
+				},
+				{
+					"fontFamily": "Ostrich Sans",
+					"name": "Ostrich Sans",
+					"slug": "ostrich-sans",
+					"fontFace": [
+						{
+							"fontFamily": "Ostrich Sans",
+							"fontWeight": "500",
+							"fontStyle": "normal",
+							"src": [
+								"file:./assets/fonts/ostrich-sans_normal_500.woff"
+							]
+						},
+						{
+							"fontFamily": "Ostrich Sans",
+							"fontWeight": "300",
+							"fontStyle": "normal",
+							"src": [
+								"file:./assets/fonts/ostrich-sans_normal_300.woff"
+							]
+						},
+						{
+							"fontFamily": "Ostrich Sans",
+							"fontWeight": "700",
+							"fontStyle": "normal",
+							"src": [
+								"file:./assets/fonts/ostrich-sans_normal_700.woff"
+							]
+						},
+						{
+							"fontFamily": "Ostrich Sans",
+							"fontWeight": "900",
+							"fontStyle": "normal",
+							"src": [
+								"file:./assets/fonts/ostrich-sans_normal_900.woff"
+							]
+						}
+					]
+				}
+			]
+		}
+	}
+}

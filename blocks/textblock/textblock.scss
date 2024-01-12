@@ -1,0 +1,32 @@
+@import "../../css/variables";
+
+.textBlockContainer {
+    width: 90%;
+    max-width: 1400px;
+    padding: 200px 0;
+    margin: 0 auto;
+    .textBlockRow {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2.5%;
+        justify-content: space-between;
+    }
+    .textBlockCol {
+        width: 100%;
+    }
+    .textBlockCol-2 {
+        width: 45%;
+        @media (max-width: 1000px) {
+            width: 100%;
+            margin-bottom: 50px;
+        }
+    }
+    .textBlockCol-3 {
+        width: 28.333%;
+        @media (max-width: 1200px) {
+            width: 100%;
+            margin-bottom: 50px;
+        }
+    }
+}

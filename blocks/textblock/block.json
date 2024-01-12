@@ -1,0 +1,16 @@
+{
+    "name": "annih/textblock",
+    "title": "Dynamic Text Block",
+    "description": "A bootstrap carousel to display your images",
+    "style": [ "file:./textblock.css" ],
+    "category": "design",
+    "icon": "table-row-after",
+    "keywords": ["textblock"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "textblock.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

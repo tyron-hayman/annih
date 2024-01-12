@@ -1,0 +1,16 @@
+{
+    "name": "annih/carousel",
+    "title": "Carousel",
+    "description": "A bootstrap carousel to display your images",
+    "style": [ "file:./carousel.css" ],
+    "category": "design",
+    "icon": "format-image",
+    "keywords": ["carousel"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "carousel.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}

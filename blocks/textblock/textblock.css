@@ -1,0 +1,34 @@
+.textBlockContainer {
+  width: 90%;
+  max-width: 1400px;
+  padding: 200px 0;
+  margin: 0 auto;
+}
+.textBlockContainer .textBlockRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2.5%;
+  justify-content: space-between;
+}
+.textBlockContainer .textBlockCol {
+  width: 100%;
+}
+.textBlockContainer .textBlockCol-2 {
+  width: 45%;
+}
+@media (max-width: 1000px) {
+  .textBlockContainer .textBlockCol-2 {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+.textBlockContainer .textBlockCol-3 {
+  width: 28.333%;
+}
+@media (max-width: 1200px) {
+  .textBlockContainer .textBlockCol-3 {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}/*# sourceMappingURL=textblock.css.map */

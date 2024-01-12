@@ -1,0 +1,43 @@
+// Branding
+$black : #000000;
+$white : #ffffff;
+$mainfont : #080808;
+$fontSecondary : #999999;
+$rust : #c7622b;
+
+// Mixins
+
+@mixin bgSize($method) {
+    background-size: $method;
+    -webkit-background-size: $method;
+    -moz-background-size: $method;
+    -o-background-size: $method;
+}
+
+@mixin borderRadius($method) {
+    border-radius: $method;
+    -webkit-border-radius: $method;
+    -moz-border-radius: $method;
+    -o-border-radius: $method;
+}
+
+@mixin transition($method) {
+    transition: $method;
+    -webkit-transition: $method;
+    -moz-transition: $method;
+    -o-transition: $method;
+}
+
+@mixin transform($method) {
+    transform: $method;
+    -webkit-transform: $method;
+    -moz-transform: $method;
+    -o-transform: $method;
+}
+
+@mixin delay($method) {
+    transition-delay: $method;
+    -webkit-transition-delay: $method;
+    -moz-transition-delay: $method;
+    -o-transition-delay: $method;
+}
